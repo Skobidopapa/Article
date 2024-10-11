@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+}
+
+#title-section {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    color: black;
+    border-bottom: 2px solid #ddd;
+}
+
+#title-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('titlesection.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#title-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#title-section p {
+    font-size: 1.2em;
+    position: relative;
+    z-index: 1;
+}
+
+#info-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#info-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+#info-links a:hover {
+    color: #555;
+}
+
+#essay {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    color: black;
+}
+
+#essay h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#essay p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.article-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.article-item:hover img {
+    transform: scale(1.05);
+}
+
+.article-item figcaption {
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+    color: #666;
+}
+
+.article-item p {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+/* Login Section Styles */
+#login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: #f9f9f9;
+}
+
+#login-section h1 {
+    margin-bottom: 20px;
+}
+
+#login-section form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#login-section label {
+    margin-bottom: 5px;
+}
+
+#login-section input[type="email"],
+#login-section input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-section button {
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-section button:hover {
+    background-color: #e68900;
+}
+
+#about-section, #contact-section {
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
